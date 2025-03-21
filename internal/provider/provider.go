@@ -288,6 +288,7 @@ func (p *OPNsenseProvider) Resources(ctx context.Context) []func() resource.Reso
 		service.NewWireguardClientResource,
 		// Quagga
 		service.NewQuaggaBGPNeighborResource,
+		service.NewQuaggaOSPFInterfaceResource,
 		service.NewQuaggaBGPASPathResource,
 		service.NewQuaggaBGPPrefixListResource,
 		service.NewQuaggaBGPCommunityListResource,
@@ -322,6 +323,7 @@ func (p *OPNsenseProvider) DataSources(ctx context.Context) []func() datasource.
 		service.NewWireguardClientDataSource,
 		// Quagga
 		service.NewQuaggaBGPNeighborDataSource,
+		service.NewQuaggaOSPFInterfaceDataSource,
 		service.NewQuaggaBGPASPathDataSource,
 		service.NewQuaggaBGPPrefixListDataSource,
 		service.NewQuaggaBGPCommunityListDataSource,
